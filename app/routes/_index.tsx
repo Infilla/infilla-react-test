@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+// import { useEffect } from "react";
 import { ParcelNumberInput } from "~/components/ParcelNumberInput";
 
 export const meta: MetaFunction = () => {
@@ -20,7 +21,7 @@ export default function IndexPage() {
             Enter the parcel number formatted like 000-000-000
           </div>
 
-          <ParcelNumberInput/>
+          <ParcelNumberInput value={""} onChange={console.log}/>
 
           {/* <div className="text-m text-red-500 my-2">
             Error messages here
@@ -42,3 +43,12 @@ export default function IndexPage() {
     </div>
   );
 }
+
+// Snippet for a remote validation request
+// 
+// useEffect(() => {
+//   fetch('/validate/123-456-008', {headers: {'Content-Type': 'application/json'}})
+//   .then(async (res) => {
+//     console.log(await res.json())
+//   })
+// }, [])
