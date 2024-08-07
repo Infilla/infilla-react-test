@@ -2,6 +2,22 @@
 
 - 📖 [Remix docs](https://remix.run/docs)
 
+## Prerequisites
+
+Install `node` and `npm`.
+
+Clone the repo:
+
+```
+git clone https://github.com/Infilla/infilla-react-test.git
+```
+
+Install the dependencies:
+
+```
+npm install
+```
+
 ## Development
 
 Run the dev server:
@@ -10,30 +26,9 @@ Run the dev server:
 npm run dev
 ```
 
-## Deployment
+Open the URL from the console (e.g. http://localhost:5173/)
 
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
+You should now be able to make changes to `app/routes/_index.tsx` and see the changes.
 
 ## Styling
 
