@@ -21,23 +21,27 @@ export default function IndexPage() {
             Enter the parcel number formatted like 000-000-000
           </div>
 
-          <ParcelNumberInput value={""} onChange={console.log}/>
+          <ParcelNumberInput value={""} onChange={console.log} />
 
           {/* <div className="text-m text-red-500 my-2">
             Error messages here
           </div> */}
 
-          <button className="mt-4 h-10 px-4 py-2 inline-flex items-center justify-center bg-emerald-400 text-white hover:bg-emerald-500"
-            onClick={() => alert("TODO")}>
+          <button
+            className="mt-4 h-10 px-4 py-2 inline-flex items-center justify-center bg-emerald-400 text-white hover:bg-emerald-500"
+            onClick={() => alert("TODO")}
+          >
             Submit
           </button>
         </div>
 
         <div className="flex-1 p-4 bg-slate-100">
           <h2 className="text-xl mb-2">Submission</h2>
-          <code><pre className="text-sm">
-            {JSON.stringify({parcelNumber: 'todo'}, null, '  ')}
-            </pre></code>
+          <code>
+            <pre className="text-sm">
+              {JSON.stringify({ parcelNumber: "todo" }, null, "  ")}
+            </pre>
+          </code>
         </div>
       </div>
     </div>
@@ -45,7 +49,7 @@ export default function IndexPage() {
 }
 
 // Snippet for a remote validation request
-// 
+//
 // useEffect(() => {
 //   fetch('/validate/123-456-008', {headers: {'Content-Type': 'application/json'}})
 //   .then(async (res) => {

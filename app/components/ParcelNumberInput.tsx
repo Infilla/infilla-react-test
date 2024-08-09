@@ -4,19 +4,21 @@ export interface ParcelNumberInputProps {
 }
 
 /**
- * Controlled input for editing a parcel number. 
+ * Controlled input for editing a parcel number.
  */
 export const ParcelNumberInput: React.FC<ParcelNumberInputProps> = ({
   value,
-  onChange
+  onChange,
 }: ParcelNumberInputProps) => {
   return (
     <div>
-      <input type="text"
+      <input
+        type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder="Parcel number"
-        className="h-10 w-full rounded-md border border-input bg-background px-3 py-2"/>
+        className="h-10 w-full rounded-md border border-input bg-background px-3 py-2"
+      />
     </div>
   );
-}
+};
