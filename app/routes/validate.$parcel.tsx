@@ -9,7 +9,7 @@ export const loader = async ({params}: LoaderFunctionArgs) => {
 
     return json({
         value: params.parcel,
-        isValid: !!errorMessage,
+        isValid: !errorMessage,
         error: errorMessage
     })
 }
