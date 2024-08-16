@@ -6,15 +6,11 @@
 
 Install `node` and `npm`.
 
-Clone the repo:
+Clone the repo & install dependencies:
 
 ```
 git clone https://github.com/Infilla/infilla-react-test.git
-```
-
-Install the dependencies:
-
-```
+cd infilla-react-test
 npm install
 ```
 
