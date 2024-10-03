@@ -5,17 +5,17 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
     throw new Error("Missing params.parcel");
   }
 
-  const errorMessage = await validateParcelNumber(params.parcel);
+  const parcelLookupErrorMsg = await validateParcelNumber(params.parcel);
 
   return json({
     value: params.parcel,
-    isValid: !errorMessage,
-    error: errorMessage,
+    exists: !parcelLookupErrorMsg,
+    error: parcelLookupErrorMsg,
   });
 };
 
 /**
- * Check if a parcel number is valid
+ * Check if a parcel number exists
  *
  * @returns `null` if the number is valid, or an error message describing the issue
  */
@@ -33,7 +33,7 @@ const validateParcelNumber = async (
 
   for (const segment of parcelNumber.split("-")) {
     if (parseInt(segment) % 2 != 1) {
-      return "Parcel segments must be odd numbers";
+      return "Doesn't exist (parcel segments must be odd numbers)";
     }
   }
 

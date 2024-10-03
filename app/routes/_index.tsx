@@ -48,11 +48,9 @@ export default function IndexPage() {
   );
 }
 
-// Snippet for a remote validation request
+// Snippet for a parcel lookup
 //
-// useEffect(() => {
-//   fetch('/validate/123-456-008', {headers: {'Content-Type': 'application/json'}})
+// fetch('/lookup/123-456-008', {headers: {'Content-Type': 'application/json'}})
 //   .then(async (res) => {
 //     console.log(await res.json())
 //   })
-// }, [])
