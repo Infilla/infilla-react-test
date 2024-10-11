@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-// import { useEffect } from "react";
 import { ParcelNumberInput } from "~/components/ParcelNumberInput";
 
 export const meta: MetaFunction = () => {
