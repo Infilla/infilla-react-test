@@ -12,8 +12,7 @@ export default function IndexPage() {
   return (
     <div className="font-sans p-4">
       <h1 className="text-3xl">Application</h1>
-      <div className="flex mt-4">
-        <div className="flex-1 p-4 bg-white">
+        <div className="mt-4 p-4 bg-white w-fit">
           <h2 className="text-xl mb-2">Property details</h2>
 
           <div className="text-m text-gray-500 my-2">
@@ -32,16 +31,6 @@ export default function IndexPage() {
           >
             Submit
           </button>
-        </div>
-
-        <div className="flex-1 p-4 bg-slate-100">
-          <h2 className="text-xl mb-2">Submission</h2>
-          <code>
-            <pre className="text-sm">
-              {JSON.stringify({ parcelNumber: "todo" }, null, "  ")}
-            </pre>
-          </code>
-        </div>
       </div>
     </div>
   );
