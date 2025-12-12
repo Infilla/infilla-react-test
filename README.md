@@ -1,40 +1,25 @@
-# Welcome to Remix!
+# Express Parcel Lookup
 
-- 📖 [Remix docs](https://remix.run/docs)
+A simple Express.js + React application for looking up parcel numbers.
 
-## Prerequisites
+## Getting Started
 
-Install `node` and `npm`.
+### Prerequisites
 
-Clone the repo & install dependencies:
+- Node.js >= 20.0.0
 
-```
-git clone https://github.com/Infilla/infilla-react-test.git
-cd infilla-react-test
+### Installation
+
+```bash
 npm install
 ```
 
-## Development
+### Running the Application
 
-Run the dev server:
-
-```shellscript
+```bash
 npm run dev
 ```
 
-Open the URL from the console (e.g. http://localhost:5173/)
+This starts both the Express server (port 4001) and Vite dev server (port 4000).
 
-You should now be able to make changes to `app/routes/_index.tsx` and see the changes.
-
-## Troubleshooting
-
-If `npm run dev` fails with an error about not finding a module, try doing a clean install:
-
-```sh
-npm cache clean --force
-npm ci
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Open http://localhost:4000 in your browser.

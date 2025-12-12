@@ -1,12 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
-import { ParcelNumberInput } from '~/components/ParcelNumberInput';
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: 'Infilla App' },
-    { name: 'description', content: 'Welcome to Infilla!' },
-  ];
-};
+import { ParcelNumberInput } from "./components/ParcelNumberInput";
 
 export default function IndexPage() {
   return (
@@ -20,7 +12,7 @@ export default function IndexPage() {
             Enter the parcel number formatted like 000-000-000
           </div>
 
-          <ParcelNumberInput value={''} onChange={console.log} />
+          <ParcelNumberInput value={""} onChange={console.log} />
 
           {/* <div className="text-m text-red-500 my-2">
             Error messages here
@@ -28,7 +20,7 @@ export default function IndexPage() {
 
           <button
             className="mt-4 h-10 px-4 py-2 inline-flex items-center justify-center bg-emerald-400 text-white hover:bg-emerald-500"
-            onClick={() => alert('TODO')}
+            onClick={() => alert("TODO")}
           >
             Submit
           </button>
@@ -37,7 +29,7 @@ export default function IndexPage() {
           <h2 className="text-xl mb-2">Submission</h2>
           <code>
             <pre className="text-sm">
-              {JSON.stringify({ parcelNumber: 'todo' }, null, '  ')}
+              {JSON.stringify({ parcelNumber: "todo" }, null, "  ")}
             </pre>
           </code>
         </div>
