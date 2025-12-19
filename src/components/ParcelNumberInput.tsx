@@ -6,10 +6,7 @@ export interface ParcelNumberInputProps {
 /**
  * Controlled input for editing a parcel number.
  */
-export const ParcelNumberInput: React.FC<ParcelNumberInputProps> = ({
-  value,
-  onChange,
-}: ParcelNumberInputProps) => {
+export function ParcelNumberInput({ value, onChange }: ParcelNumberInputProps) {
   return (
     <div>
       <input
@@ -21,4 +18,4 @@ export const ParcelNumberInput: React.FC<ParcelNumberInputProps> = ({
       />
     </div>
   );
-};
+}
